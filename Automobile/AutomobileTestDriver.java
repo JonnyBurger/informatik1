@@ -5,18 +5,18 @@ public class AutomobileTestDriver {
 		michaelsCar.speed = 20;
 		michaelsCar.license = "ZH999";
 
-		System.out.println("amount of fuel: " + michaelsCar.fuel + " gallons");
-		System.out.println("speed: " + michaelsCar.speed);
-		System.out.println("license plate: " + michaelsCar.license);
+		AutomobileTestDriver.printStats(michaelsCar);
 
 		Automobile sebisCar = new Automobile();
 		sebisCar.fuel = 70;
 		sebisCar.speed = 10;
 		sebisCar.license = "ZH998";
 
-		System.out.println("amount of fuel: " + sebisCar.fuel + " gallons");
-		System.out.println("speed: " + sebisCar.speed);
-		System.out.println("license plate: " + sebisCar.license);
-
+		sebisCar.print();
+	}
+	private static void printStats(Automobile args) {
+		System.out.println("amount of fuel: " + args.fuel + " gallons");
+		System.out.println("speed: " + args.speed);
+		System.out.println("license plate: " + args.license);
 	}
 }
