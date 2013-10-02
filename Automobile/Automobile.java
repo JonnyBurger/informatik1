@@ -23,6 +23,7 @@ public class Automobile {
 			System.out.println("Tank leer");
 		}
 	}
+
 	/*
 		a method that returns a thing does not have a void statement,
 		it has a object type in fornt of it
@@ -32,6 +33,9 @@ public class Automobile {
 							+ " and your license plate is " + license;
 		return description; 
 	}
+	/*
+		same as above, only here a double is returned
+	*/
 	double getMileage() {
 		double result = fuel / CONSUMPTION_IN_LITER_PER_MILE;
 		return result;
