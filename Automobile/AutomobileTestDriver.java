@@ -10,12 +10,13 @@ public class AutomobileTestDriver {
 		Automobile sebisCar = new Automobile();
 		sebisCar.fuel = 70;
 		sebisCar.speed = 10;
-		sebisCar.license = "ZH998";
+		sebisCar.license = "ZH500";
 
 		sebisCar.accelerate(50);
 		sebisCar.slowdown(50);
 
 		sebisCar.print();
+		System.out.println(sebisCar.getDescription());
 	}
 	private static void printStats(Automobile args) {
 		System.out.println("amount of fuel: " + args.fuel + " gallons");
