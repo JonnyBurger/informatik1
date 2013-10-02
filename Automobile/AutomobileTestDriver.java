@@ -12,6 +12,9 @@ public class AutomobileTestDriver {
 		sebisCar.speed = 10;
 		sebisCar.license = "ZH998";
 
+		sebisCar.accelerate(50);
+		sebisCar.slowdown(50);
+
 		sebisCar.print();
 	}
 	private static void printStats(Automobile args) {
